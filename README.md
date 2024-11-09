@@ -41,6 +41,8 @@ Our primary users are:
 
 To set up the project locally:
 
-1. Clone the repository:
+1. Clone the repository
 
 2. Install and unzip [pkl file](https://drive.google.com/file/d/1U2adNSopYDrypJxEITpl6h6FP2l3AvTK/view?usp=sharing)
+
+
