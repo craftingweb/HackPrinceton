@@ -15,8 +15,7 @@ Our solution uses machine learning to predict patient demand at various urgent c
 - **Smart Redistribution**: Suggests alternate urgent care locations with shorter wait times to balance patient load.
 - **Demand Prediction**: Uses machine learning to forecast patient influx, allowing for dynamic adjustment of recommendations.
 - **Urgent Care Info Cards**: Displays urgent care center information on interactive cards, including name, address, and estimated wait time.
-- **Busy Times Data**: Uses the Google Maps Places API to gather data on peak times for each location, helping to improve wait time predictions.
-- **Machine Learning Model for Wait Times**: Implements a predictive model to estimate wait times based on factors like location, historical data, and peak hours.
+- **Machine Learning Model for Wait Times**: Implements a predictive model to estimate wait times.
 
 ## Target Market
 Our primary users are:
@@ -31,11 +30,10 @@ Our primary users are:
 4. **User Notification**: Users receive instant recommendations via an intuitive interface with information cards.
 
 ## Tech Stack
-- **Frontend**: React or Vue.js for the user interface.
-- **Backend**: Node.js with Express for the server and API calls.
-- **Machine Learning**: Python with Scikit-Learn or TensorFlow for demand and wait time prediction.
-- **Database**: MongoDB or PostgreSQL for data storage.
-- **APIs**: Google Maps API for location-based services and Maps integration, Places API for busy times data.
+- **Frontend**: React for the user interface.
+- **Backend**: Node.js for the server and API calls.
+- **Machine Learning**: Python with Scikit-Learn for demand and wait time prediction.
+- **APIs**: Google Maps API for location-based services and Maps integration.
 
 ## Installation
 
@@ -44,5 +42,10 @@ To set up the project locally:
 1. Clone the repository
 
 2. Install and unzip [pkl file](https://drive.google.com/file/d/1er3q6aY1HwG0IFH7qa2ZsCKP0doaXMqt/view?usp=sharing)
+
+3. Run the following commands
+
+## References
+- 
 
 
