@@ -46,6 +46,12 @@ To set up the project locally:
 3. Run the following commands
 
 ## References
-- 
+- [CS Group Operational Data Challenge](https://cs.group/operational-data-challenge/)
+- [ScienceDirect: AI Techniques in Medical Imaging](https://www.sciencedirect.com/science/article/pii/S187705092202097X)
+- [Journal of the American College of Radiology: AI in Radiology](https://www.jacr.org/article/S1546-1440(17)31014-1/abstract)
+- [Papers With Code - Machine Learning and AI Papers](https://paperswithcode.com/)
+- [Medical Analytics Research - Source](https://medicalanalyti)
+- [A Practical Guide on Scikit-Learn for Time Series Forecasting (Medium)](https://medium.com/@mouse3mic3/a-practical-guide-on-scikit-learn-for-time-series-forecasting-bbd15b611a5d)
+
 
 
