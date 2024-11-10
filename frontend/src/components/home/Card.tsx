@@ -1,5 +1,6 @@
 /* eslint-disable @typescript-eslint/no-unused-vars */
 import { useEffect, useState } from "react";
+import axios from "axios"; //for making api requests
 import {
   FaClock,
   FaDirections,
@@ -36,6 +37,42 @@ export const Card = ({
   useEffect(() => {
     localStorage.setItem("item", JSON.stringify(selectedTimes));
   }, [selectedTimes]);
+
+  //function to fetch wait time from Flask API
+  const fetchWaitTime = async (lat: number, lon: number) => {
+    try {
+      const response = await axios.post(
+        "http://localhost:5001/predict", //Flask API endpoint
+        {
+          latitude: lat,
+          longitude: lon,
+        });
+        return response.data.prediction;
+    } catch (error){ //error message if there is a mistake
+      console.error("Error fetching wait time:", error);
+      return null;
+    }
+
+  };
+
+  //fetch the wait time when component
+  useEffect(() => {
+    const fetchAndSetWaitTime = async () => {
+      const waitTime = await fetchWaitTime(destinationLat, destinationLon);
+    if (waitTime !== null){
+      setTime(waitTime); //Udate the sTime with prediction
+      setSelectedTimes((prev) => {
+        const exists = prev.some((t) => t.id === data.id);
+        if (exists) {
+          return prev.map((t) => t.id === data.id ? {...t, waitTime} : t);
+        } else {
+          return [...prev, { id: data.id, waitTime}];
+        }
+      });
+    }
+    };
+    fetchAndSetWaitTime(); //call async function
+  }, [destinationLat, destinationLon]); 
 
   const handleClick = () => {
     setIsOpen(true);
