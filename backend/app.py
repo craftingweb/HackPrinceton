@@ -9,9 +9,11 @@ import os
 
 # Initialize Flask app
 app = Flask(__name__)
-CORS(app) 
+CORS(app)
 
-MODEL_ZIP_URL = "https://github.com/craftingweb/HackPrinceton/blob/main/wait_model_final.pkl.zip"
+#link to zipped version of model.pkl in google drive
+MODEL_ZIP_URL = "https://drive.google.com/uc?export=download&id=1er3q6aY1HwG0IFH7qa2ZsCKP0doaXMqt"
+
 MODEL_DIR = "backend/model"
 MODEL_FILE_PATH = os.path.join(MODEL_DIR, "wait_model_final.pkl")
 
