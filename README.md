@@ -1,4 +1,4 @@
-# [QCare: Your Quick Urgent Care Coordinator](https://u-care.netlify.app/)
+# [QCare: Your Quick Urgent Care Coordinator](https://dorahacks.io/buidl/19374)
 
 ## Overview
 The **Urgent Care Coordinator** is a smart tool that helps users locate the nearest urgent care center with the shortest wait time. By leveraging machine learning and real-time data, our solution optimizes patient distribution across facilities, reducing congestion and improving care accessibility.
